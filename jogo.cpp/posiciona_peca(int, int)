@@ -1,0 +1,10 @@
+bool Jogo::posiciona_peca(int x, int y) {
+	if (x>=0 && x<3 && y>=0 && y<3 && tabuleiro[x][y] == ' ') {
+		tabuleiro[x][y] = jogador;
+		jogadas++;
+		return true;
+	} else {
+		cout << "Jogada Invalida. Jogue novamente.";
+		return false;	
+	}
+}
