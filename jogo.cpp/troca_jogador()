@@ -1,0 +1,6 @@
+void Jogo::troca_jogador() {
+	if (jogador == 'X') {
+		jogador = 'O';
+	}
+	else jogador = 'X';
+}
