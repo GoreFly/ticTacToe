@@ -2,7 +2,7 @@ ticTacToe
 =========
 
 A simple ticTacToe C++ game code. 
-Comments, attributes and methods are in variable. Some of these are:
+Comments, attributes and methods are in portuguese. Some of these are:
 
 jogo == game;
 
