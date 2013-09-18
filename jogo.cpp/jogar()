@@ -1,0 +1,32 @@
+void Jogo::jogar() {
+		int i, posX, posY;
+
+		while(terminou() == false) {
+			do {
+				cout << "Jogada: " << jogadas+1 << endl << endl;
+				desenha_tabuleiro();
+				cout << endl << endl;
+
+				cout << "Jogador: " << jogador << endl;
+				cout << "Linha: ";
+				cin >> posX;
+				cout << "Coluna: ";
+				cin >> posY;
+				cout << endl << endl;
+			} while(posiciona_peca(posX, posY) == false);
+
+			// caso não haja vencedor, é a vez do outro jogador
+			if (terminou() == false) {
+				troca_jogador();
+				system("pause");
+				limpa_tela();
+			}
+		}
+
+		// anuncio do vencedor
+		cout << endl << endl;
+		desenha_tabuleiro();
+		cout << endl << endl;
+		cout << "Vencedor: " << verifica_vencedor() << endl << endl;
+
+}
