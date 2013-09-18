@@ -1,0 +1,6 @@
+bool Jogo::terminou() {
+	if (jogadas < 9 && verifica_vencedor() == ' ')
+		return false;
+	else
+		return true;
+}
