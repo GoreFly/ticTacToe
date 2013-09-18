@@ -1,0 +1,11 @@
+Jogo::Jogo() {
+	int i, j;
+
+	for (i=0; i<3; i++)
+		for(j=0; j<3; j++)
+			tabuleiro[i][j] = ' ';
+	jogadas = 0;
+	srand(time(NULL));		// inicializa semente para sorteio
+	if (rand() % 2 == 0)	jogador = 'X';
+	else	jogador = 'O';
+}
