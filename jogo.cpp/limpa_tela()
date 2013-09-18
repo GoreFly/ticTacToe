@@ -1,0 +1,3 @@
+void Jogo::limpa_tela() {
+	system("cls");
+}
